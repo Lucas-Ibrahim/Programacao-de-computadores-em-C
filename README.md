@@ -1,16 +1,68 @@
-Esse repositorio é destinado para os projetos que trabalhei durante essa disciplina de linguagem C, todos programas foram feitos no CODEBLOCKS. 
+# 🎲 Jogo de Adivinhação (Projeto 1 - C)
 
-Os Arquivos PDF sao os relatorios que foram entregues sobre cada projeto.
+Um jogo simples onde o usuário precisa adivinhar um número secreto de 4 dígitos (entre 1000 e 9999), gerado aleatoriamente pelo sistema.
 
-Projeto 1: 
-- O projeto consiste em um jogo de adivinhação, em que basicamente é gerado um número aleatório de quatro dígitos (1000 – 9999) pelo sistema e o usuário que possui 10 tentativas no máximo para tentar acertar o número sorteado pelo sistema. Após cada tentativa se o jogador acertar algum número e sua posição o sistema deve mostrar o número correto na posição correta. O jogador vence se acertar exatamente o numero escolhido pelo sistema e se não conseguir nas 10 tentativas ele perde o jogo. Após o fim do jogo o usuário pode escolher se deseja continuar jogando ou não.
+## 👥 Autores
+- Felipe Natali Amaral – RA: 24792566  
+- José Vitor Rodrigues Nucci – RA: 24024423  
+- Lucas Leal Ibrahim – RA: 24014012  
+- Pedro Pimentel Rodrigues – RA: 24023362  
 
-Projeto 2: 
-- Este projeto tem como objetivo de criar um jogo da vida usando uma matriz 10X10, em que cada célula pode estar viva (1) ou morta (0), e sua evolução segue regras baseadas na quantidade de vizinhos vivos. O programa deve inicializar o tabuleiro com células vivas e mortas distribuídas aleatoriamente, simular um número de gerações definido pelo usuário e exibir o tabuleiro após cada iteração, permitindo acompanhar a transformação da população ao longo do tempo.
+## 📖 Descrição
+- O jogador possui **10 tentativas** para acertar o número sorteado.  
+- Após cada tentativa, o sistema informa quais dígitos estão corretos e em suas posições.  
+- Se não acertar nas 10 rodadas, o jogador perde.  
+- No final, pode escolher se deseja continuar ou sair do jogo.
 
-  • Informações adicionais:
-      − Uma célula viva continua viva se tiver 2 ou 3 vizinhos vivos. Caso contrário, morre por solidão ou superpopulação.
-      − Uma célula morta torna-se viva se tiver exatamente 3 vizinhos vivos.
+## 🛠️ Tecnologias Utilizadas
+- Linguagem C  
+- Biblioteca `<time.h>` para geração de números aleatório
 
-Projeto 3: 
-- O projeto consiste em criar um sistema para uma loja onde é possível o controle de vendas e produtos. O objetivo é que a loja consiga acompanhar seu desempenho, por meio de obter fácil acesso a dados como quantidade de produtos e lucro.
+
+
+# 🧬 Jogo da Vida (Projeto 2 - C)
+
+Implementação do clássico **Conway's Game of Life**, utilizando uma matriz 10x10 para representar células vivas e mortas.
+
+## 👥 Autores
+- Felipe Natali Amaral – RA: 24792566  
+- José Vitor Rodrigues Nucci – RA: 24024423  
+- Lucas Leal Ibrahim – RA: 24014012  
+- Pedro Pimentel Rodrigues – RA: 24023362  
+
+## 📖 Descrição
+- Cada célula pode estar **viva (1)** ou **morta (0)**.  
+- A evolução segue as regras:  
+  - Uma célula viva sobrevive se tiver 2 ou 3 vizinhos.  
+  - Caso contrário, morre por solidão ou superpopulação.  
+  - Uma célula morta nasce se tiver exatamente 3 vizinhos.  
+
+## 🛠️ Tecnologias Utilizadas
+- Linguagem C  
+- Biblioteca `<time.h>` (para aleatoriedade via `srand` e `rand`)
+
+
+
+`markdown
+# 🛒 Sistema de Controle de Loja (Projeto 3 - C)
+
+Sistema de gerenciamento de produtos e vendas para auxiliar uma loja a acompanhar seu estoque e lucro.
+
+## 👥 Autores
+- Felipe Natali Amaral – RA: 24792566  
+- José Vitor Rodrigues Nucci – RA: 24024423  
+- Lucas Leal Ibrahim – RA: 24014012  
+- Pedro Pimentel Rodrigues – RA: 24023362  
+
+## 📖 Descrição
+O sistema permite:  
+- Cadastro de produtos (código, nome, quantidade em estoque e preço).  
+- Registro de vendas associadas a produtos.  
+- Relatórios como **produto mais vendido** e **quantidade de itens vendidos**.  
+
+Foi implementado com **menu interativo (switch-case)** e laço infinito, permitindo ao usuário navegar até optar por sair.
+
+## 🛠️ Tecnologias Utilizadas
+- Linguagem C  
+- Estruturas `struct` para produtos e vendas  
+- Funções separadas para cada operação (modularização)  
