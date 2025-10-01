@@ -18,7 +18,7 @@ Um jogo simples onde o usuário precisa adivinhar um número secreto de 4 dígit
 - Linguagem C  
 - Biblioteca `<time.h>` para geração de números aleatório
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 # 🧬 Jogo da Vida (Projeto 2 - C)
 
@@ -41,9 +41,8 @@ Implementação do clássico **Conway's Game of Life**, utilizando uma matriz 10
 - Linguagem C  
 - Biblioteca `<time.h>` (para aleatoriedade via `srand` e `rand`)
 
+-----------------------------------------------------------------------------------------------------------------------------
 
-
-`markdown
 # 🛒 Sistema de Controle de Loja (Projeto 3 - C)
 
 Sistema de gerenciamento de produtos e vendas para auxiliar uma loja a acompanhar seu estoque e lucro.
